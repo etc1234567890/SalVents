@@ -1,0 +1,123 @@
+.section1 {
+    min-height: 50vh;
+    min-width: none;
+    background-image: url('/resources/images/background1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.section1 h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for navbar color change on scroll */
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+.feature-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.cover-image-container {
+    position: relative;
+    height: 300px;
+}
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.change-wallpaper-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.change-wallpaper-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.about-profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 999px;
+}
+
+.discussion-section {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.fixed-input {
+    position: sticky;
+    bottom: 0;
+    background: white;
+}
+
+.custom-bg {
+    background: url('/resources/images/background1.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Floating window style */
+.floating-window {
+    top: 50%; /* Adjust to align the profile picture in the middle */
+    transform: translateY(-50%);
+}
+
+.carousel-item {
+    transition: transform 0.3s ease;
+}
+.carousel-wrapper {
+    overflow: hidden;
+}
+
+.pd-left{
+    padding-left: 700px;
+}
+
+.password-field {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    padding: 2px 5px;
+    position: relative;
+}
+
+.password-field::after {
+    content: '••••••••••••••••••••••••••';
+    color: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.width-box{
+    width: 200px;
+}
